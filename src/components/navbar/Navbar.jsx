@@ -29,8 +29,25 @@ function Navbar() {
             <span>Explore</span>
             <span>English</span>
             <span>Sign In</span>
-            <span>Become a Seller</span>
-            <button>Join</button>
+            {!currentUser?.isSeller && <span>Become a Seller</span>}
+            {!currentUser&&<button>Join</button>}
+            {currentUser &&(
+              <div className="user">
+                <img src="" alt="" />
+                <span>{currentUser?.username}</span>
+                <div className="options">
+                  {currentUser?.isSeller && (
+                    <>
+                    <span>Gigs</span>
+                    <span>Add new gig</span>
+                    </>
+                  )}
+                  <span>Orders</span>
+                  <span>Messages</span>
+                  <span>Logout</span>
+                </div>
+              </div>
+            )}
         </div>
         </div>
 {  active &&(    
