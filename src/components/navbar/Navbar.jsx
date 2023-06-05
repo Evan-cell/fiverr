@@ -17,6 +17,7 @@ function Navbar() {
     username: 'evan kim',
     isSeller: true
   }
+  const [open,setOpen] = useState(false)
   return (
     <div className={active ? "navbar active": "navbar"}>
         <div className="container">
@@ -33,7 +34,7 @@ function Navbar() {
             {!currentUser&&<button>Join</button>}
             {currentUser &&(
               <div className="user">
-                <img src="" alt="" />
+                <img src="https://media.istockphoto.com/id/1410538853/photo/young-man-in-the-public-park.webp?b=1&s=170667a&w=0&k=20&c=pGdjFVdK-_BhTa6PMy5VNcXdbxVNngzg-OPzMfJKrG8=" alt="" />
                 <span>{currentUser?.username}</span>
                 <div className="options">
                   {currentUser?.isSeller && (
