@@ -1,8 +1,31 @@
 import React from 'react'
-
+import './Featured.scss'
 function Featured() {
   return (
-    <div>Featured</div>
+    <div className='featured'>
+        <div className="container">
+            <div className="left">
+                <h1>Find the perfect freelance services for your business</h1>
+                <div className="search">
+                    <div className="searchInput">
+                        <img src="./img/search.png" alt="" />
+                        <input type="text" placeholder='Building mobile app' />
+                    </div>
+                    <button>search</button>
+                </div>
+                <div className="popular">
+                    <span>Popular:</span>
+                    <button>Web Design</button>
+                    <button>wordpress</button>
+                    <button>Logo Design</button>
+                    <button>Ai services</button>
+                </div>
+            </div>
+            <div className="right">
+                <img src="./img/man.png" alt="" />
+            </div>
+        </div>
+    </div>
   )
 }
 
