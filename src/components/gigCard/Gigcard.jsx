@@ -3,7 +3,7 @@ import  './Gigcard.scss'
 import { Link } from 'react-router-dom'
 function Gigcard({item}) {
   return (
-    <Link to='/gig/123'>
+    <Link to='/gig/123' className='link'>
     <div className='gigcard'>
         <img src={item.img} alt="" />
         <div className="info">
