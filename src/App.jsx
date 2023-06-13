@@ -15,6 +15,7 @@ import Orders from './components/pages/orders/Orders';
 import Messages from './components/pages/messages/Messages';
 import Message from './components/pages/message/Message';
 import Add from './components/pages/add/Add';
+import Mygigs from './components/pages/mygigs/Mygigs';
 
 function App() {
   const Layout = () =>{
@@ -40,6 +41,10 @@ function App() {
           path:'/gigs',
           element:<Gigs />
         },
+        {
+          path: '/mygigs',
+          element:<Mygigs />
+        },  
         {
           path:'/gig/:id',
           element:<Gig />

@@ -54,6 +54,9 @@ function Navbar() {
                   <Link to='/orders' className='link'>
                   <span>Orders</span>
                   </Link>
+                  <Link to='/mygigs' className='link'>
+                  <span>mygigs</span>
+                  </Link>
                   <Link to='/messages' className='link'>
                   <span>Messages</span>
                   </Link>
